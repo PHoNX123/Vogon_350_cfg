@@ -1,0 +1,25 @@
+#####################################################################
+### Klipper frissítés
+#####################################################################
+
+#EBB
+STM32G0B1
+8KiB bootloader
+8MHz crystal
+CAN bus on PB0/PB1
+500000 CAN bus speed
+
+cd ~/CanBoot/scripts
+python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 11ff2aa9d5f3
+#####################################################################
+
+#Octopus
+STM32F429
+32KiB bootloader
+8MHz crystal
+CAN bus on PA11/PA12
+500000 CAN bus speed
+
+cd ~/CanBoot/scripts
+python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 00885405c11c
+#####################################################################
