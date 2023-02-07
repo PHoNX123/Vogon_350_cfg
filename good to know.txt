@@ -53,3 +53,11 @@ bed_mesh: relative_reference_index 4 is (310.00, 40.00)
 2 | (175.0, 15.0) | (175.0, 40.0)
 1 | (107.5, 15.0) | (107.5, 40.0)
 0 | (40.0, 15.0) | (40.0, 40.0)
+
+#####################################################################
+### rotation_distance
+#####################################################################
+rotation_distance = <full_steps_per_rotation> * <microsteps> / <steps_per_mm>
+full_steps_per_rotation = 200 for 1,8 motor / 400 for 0,9 motor
+microsteps = 2,4,6,8,16,32,64,128,256
+steps_per_mm = <pulley> * <pitch> / eg. Gates (2mm) = 20T*2=40
