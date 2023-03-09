@@ -3,7 +3,7 @@
 
 # Specify the control option to adjust and the step size
 ctrl="tilt_absolute"  # replace with the desired control option
-step=3000            # replace with the desired step size
+step=3600            # replace with the desired step size
 
 # Get the current value of the control option
 value=$(v4l2-ctl -d /dev/video0 -C $ctrl | awk -F ":" '{print $2}')
